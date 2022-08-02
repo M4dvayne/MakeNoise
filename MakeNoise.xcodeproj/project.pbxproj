@@ -11,6 +11,11 @@
 		23271DA228999ED0003A3266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DA128999ED0003A3266 /* ContentView.swift */; };
 		23271DA428999ED7003A3266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23271DA328999ED7003A3266 /* Assets.xcassets */; };
 		23271DA728999ED7003A3266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23271DA628999ED7003A3266 /* Preview Assets.xcassets */; };
+		23271DAE2899A00C003A3266 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DAD2899A00C003A3266 /* Model.swift */; };
+		23271DB02899A26A003A3266 /* ScrollCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DAF2899A26A003A3266 /* ScrollCircleView.swift */; };
+		23271DB22899A3C3003A3266 /* CircleSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DB12899A3C3003A3266 /* CircleSoundView.swift */; };
+		23271DB52899B5C1003A3266 /* BarkingDog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23271DB42899B5C1003A3266 /* BarkingDog.mp3 */; };
+		23271DB72899B87F003A3266 /* SoundMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DB62899B87F003A3266 /* SoundMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		23271DA128999ED0003A3266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23271DA328999ED7003A3266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23271DA628999ED7003A3266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23271DAD2899A00C003A3266 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		23271DAF2899A26A003A3266 /* ScrollCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCircleView.swift; sourceTree = "<group>"; };
+		23271DB12899A3C3003A3266 /* CircleSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSoundView.swift; sourceTree = "<group>"; };
+		23271DB42899B5C1003A3266 /* BarkingDog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarkingDog.mp3; sourceTree = SOURCE_ROOT; };
+		23271DB62899B87F003A3266 /* SoundMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +63,13 @@
 			children = (
 				23271D9F28999ED0003A3266 /* MakeNoiseApp.swift */,
 				23271DA128999ED0003A3266 /* ContentView.swift */,
+				23271DAF2899A26A003A3266 /* ScrollCircleView.swift */,
+				23271DB12899A3C3003A3266 /* CircleSoundView.swift */,
+				23271DB62899B87F003A3266 /* SoundMaker.swift */,
+				23271DAD2899A00C003A3266 /* Model.swift */,
 				23271DA328999ED7003A3266 /* Assets.xcassets */,
 				23271DA528999ED7003A3266 /* Preview Content */,
+				23271DB32899B579003A3266 /* New Group */,
 			);
 			path = MakeNoise;
 			sourceTree = "<group>";
@@ -65,6 +80,14 @@
 				23271DA628999ED7003A3266 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23271DB32899B579003A3266 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				23271DB42899B5C1003A3266 /* BarkingDog.mp3 */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23271DA728999ED7003A3266 /* Preview Assets.xcassets in Resources */,
+				23271DB52899B5C1003A3266 /* BarkingDog.mp3 in Resources */,
 				23271DA428999ED7003A3266 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23271DB72899B87F003A3266 /* SoundMaker.swift in Sources */,
+				23271DAE2899A00C003A3266 /* Model.swift in Sources */,
+				23271DB02899A26A003A3266 /* ScrollCircleView.swift in Sources */,
 				23271DA228999ED0003A3266 /* ContentView.swift in Sources */,
+				23271DB22899A3C3003A3266 /* CircleSoundView.swift in Sources */,
 				23271DA028999ED0003A3266 /* MakeNoiseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
