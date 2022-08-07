@@ -16,6 +16,9 @@
 		23271DB22899A3C3003A3266 /* CircleSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DB12899A3C3003A3266 /* CircleSoundView.swift */; };
 		23271DB52899B5C1003A3266 /* BarkingDog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23271DB42899B5C1003A3266 /* BarkingDog.mp3 */; };
 		23271DB72899B87F003A3266 /* SoundMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DB62899B87F003A3266 /* SoundMaker.swift */; };
+		23271DB9289C712E003A3266 /* Icq.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23271DB8289C712E003A3266 /* Icq.mp3 */; };
+		23271DBB289C7133003A3266 /* Cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23271DBA289C7133003A3266 /* Cat.mp3 */; };
+		23271DBD289C7CF4003A3266 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23271DBC289C7CF4003A3266 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		23271DB12899A3C3003A3266 /* CircleSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSoundView.swift; sourceTree = "<group>"; };
 		23271DB42899B5C1003A3266 /* BarkingDog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarkingDog.mp3; sourceTree = SOURCE_ROOT; };
 		23271DB62899B87F003A3266 /* SoundMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMaker.swift; sourceTree = "<group>"; };
+		23271DB8289C712E003A3266 /* Icq.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Icq.mp3; sourceTree = "<group>"; };
+		23271DBA289C7133003A3266 /* Cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cat.mp3; sourceTree = "<group>"; };
+		23271DBC289C7CF4003A3266 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +72,11 @@
 				23271DAF2899A26A003A3266 /* ScrollCircleView.swift */,
 				23271DB12899A3C3003A3266 /* CircleSoundView.swift */,
 				23271DB62899B87F003A3266 /* SoundMaker.swift */,
-				23271DAD2899A00C003A3266 /* Model.swift */,
+				23271DBE28A06D45003A3266 /* Model */,
+				23271DBF28A06D54003A3266 /* DataManager */,
 				23271DA328999ED7003A3266 /* Assets.xcassets */,
 				23271DA528999ED7003A3266 /* Preview Content */,
-				23271DB32899B579003A3266 /* New Group */,
+				23271DB32899B579003A3266 /* Media */,
 			);
 			path = MakeNoise;
 			sourceTree = "<group>";
@@ -82,12 +89,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		23271DB32899B579003A3266 /* New Group */ = {
+		23271DB32899B579003A3266 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				23271DBA289C7133003A3266 /* Cat.mp3 */,
+				23271DB8289C712E003A3266 /* Icq.mp3 */,
 				23271DB42899B5C1003A3266 /* BarkingDog.mp3 */,
 			);
-			path = "New Group";
+			path = Media;
+			sourceTree = "<group>";
+		};
+		23271DBE28A06D45003A3266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23271DAD2899A00C003A3266 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23271DBF28A06D54003A3266 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				23271DBC289C7CF4003A3266 /* DataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +175,8 @@
 			files = (
 				23271DA728999ED7003A3266 /* Preview Assets.xcassets in Resources */,
 				23271DB52899B5C1003A3266 /* BarkingDog.mp3 in Resources */,
+				23271DB9289C712E003A3266 /* Icq.mp3 in Resources */,
+				23271DBB289C7133003A3266 /* Cat.mp3 in Resources */,
 				23271DA428999ED7003A3266 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +191,7 @@
 				23271DB72899B87F003A3266 /* SoundMaker.swift in Sources */,
 				23271DAE2899A00C003A3266 /* Model.swift in Sources */,
 				23271DB02899A26A003A3266 /* ScrollCircleView.swift in Sources */,
+				23271DBD289C7CF4003A3266 /* DataManager.swift in Sources */,
 				23271DA228999ED0003A3266 /* ContentView.swift in Sources */,
 				23271DB22899A3C3003A3266 /* CircleSoundView.swift in Sources */,
 				23271DA028999ED0003A3266 /* MakeNoiseApp.swift in Sources */,

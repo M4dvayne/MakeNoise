@@ -9,14 +9,18 @@ import Foundation
 import AVFoundation
 
 class SoundMaker {
-   static let shared = SoundMaker()
+    static let shared = SoundMaker()
     
+    private let trackInfo = CircleSounds.getSongs()
     var audioPlayer = AVAudioPlayer()
     
-   func startSound(){
-        guard let pathToAudio = Bundle.main.path(forResource: "BarkingDog", ofType: "mp3") else {return}
-        let url = URL(fileURLWithPath: pathToAudio)
+    
+    func startSound(songName: String){
         
+        guard let pathToAudio = Bundle.main.path(forResource: songName , ofType: "mp3") else {return}
+        
+        let url = URL(fileURLWithPath: pathToAudio)
+        print(url)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer.play()
@@ -25,3 +29,4 @@ class SoundMaker {
         }
     }
 }
+

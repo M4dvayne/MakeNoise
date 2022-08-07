@@ -9,28 +9,45 @@ import SwiftUI
 import AVFoundation
 
 struct CircleSoundView: View {
-    private let circle = SoundCircle()
+    private let soundCircle = CircleSounds.getSongs()
+    @State private var scale: CGFloat = 2
+    @State var isSelected: Bool = false
+    
     
     let colors: [Color] = [.indigo, .blue, .cyan, .gray, .mint, .orange, .pink]
     
     var body: some View {
-        Button(action: SoundMaker.shared.startSound){
-            ZStack{
-                Circle()
-                    .fill(colors.randomElement() ?? .red)
-                    .frame(width: 88, height: 88)
-                VStack {
-                    Text(circle.soundName.randomElement()?.value ?? "Empty")
-                        .tint(.white)
+        ScrollView{
+            LazyVStack{
+                ForEach(0..<soundCircle.count, id: \.self){ index in
+                    Button(action: {SoundMaker.shared.startSound(songName: soundCircle[index])}){
+                            ZStack{
+                                Circle()
+                                    .fill(colors.randomElement() ?? .red)
+                                    .frame(width: 88, height: 88)
+                                    .shadow(color: .gray, radius: 8, x: 14, y: 8)
+                                VStack {
+                                    Text("\(soundCircle[index])")
+                                        .tint(.white)
+                                        .onTapGesture {
+                                            print("здесь можно обработать анимацию")
+                                        }
+                                }
+                            }
+                       }
+                    
                 }
             }
         }
     }
 }
 
+
+
 struct CircleSoundView_Previews: PreviewProvider {
     static var previews: some View {
         CircleSoundView()
     }
 }
+
 
