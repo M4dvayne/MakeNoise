@@ -10,7 +10,6 @@ import AVFoundation
 
 struct CircleSoundView: View {
     private let soundCircle = CircleSounds.getSongs()
-    @State private var scale: CGFloat = 2
     @State var isSelected: Bool = false
     
     
@@ -23,19 +22,21 @@ struct CircleSoundView: View {
                     Button(action: {SoundMaker.shared.startSound(songName: soundCircle[index])}){
                             ZStack{
                                 Circle()
-                                    .fill(colors.randomElement() ?? .red)
-                                    .frame(width: 88, height: 88)
-                                    .shadow(color: .gray, radius: 8, x: 14, y: 8)
+                                    .fill(LinearGradient(
+                                        colors: [.red, .orange],
+                                        startPoint: UnitPoint(x: 0, y: 1),
+                                        endPoint: UnitPoint(x: 1, y: 0))
+                                    )
+                                    .shadow(color: .gray, radius: 8, x: 18, y: 5)
+                                    .frame(width: 80, height: 80)
                                 VStack {
                                     Text("\(soundCircle[index])")
                                         .tint(.white)
-                                        .onTapGesture {
-                                            print("здесь можно обработать анимацию")
-                                        }
+                                        .font(.system(size: 14))
+                                        .rotationEffect(Angle(degrees: isSelected ? 360 : 0))
                                 }
                             }
                        }
-                    
                 }
             }
         }

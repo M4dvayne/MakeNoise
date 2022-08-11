@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSelected: Bool = false
+    @State private var ddd: Double = 20.0
     var body: some View {
-       CircleSoundView()
+        
+        CircleSoundView()
     }
 }
 
