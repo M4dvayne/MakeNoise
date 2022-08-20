@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct CircleSounds {
+class CircleSounds {
     
     let soundNames: [String]
+    
+    init(soundNames: [String]) {
+        self.soundNames = soundNames
+    }
     
 }
 
