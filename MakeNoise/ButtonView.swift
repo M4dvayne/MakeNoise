@@ -19,7 +19,7 @@ struct ButtonView: View {
         ZStack{
             Circle()
                 .fill(LinearGradient(
-                    colors: [.black, .white],
+                    colors: [.yellow, .black],
                     startPoint: UnitPoint(x: 0, y: 1),
                     endPoint: UnitPoint(x: 1, y: 0))
                 )

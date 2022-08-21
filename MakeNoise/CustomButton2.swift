@@ -25,16 +25,14 @@ struct CustomButton2: View {
 struct AnimatedCircleView: View {
     //здесь необходимо проработать логику длительности вращения
     @State private var soundCircle = CircleSounds.getSongs()
-    let soundDuration = SoundMaker.shared.getSoundDuration()
     @State var isSelected: Bool = false
     let num: Int
     
     var body: some View {
         Button(action: {
             SoundMaker.shared.startSound(songName: soundCircle[num]);
-            withAnimation(.easeOut(duration: isSelected ? soundDuration : 0)) {
+            withAnimation(.easeOut(duration: SoundMaker.shared.getSoundDuration(songName: soundCircle[num])).speed(5.0)) {
                 isSelected.toggle()
-            print("ok")
         }}) {
                 ButtonView(isSelected: $isSelected, text: $soundCircle[num])
             
