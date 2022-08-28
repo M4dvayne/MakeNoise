@@ -8,17 +8,14 @@
 import Foundation
 
 class CircleSounds {
-    
     let soundNames: [String]
     
     init(soundNames: [String]) {
         self.soundNames = soundNames
     }
-    
 }
 
 extension CircleSounds {
-    
     static func getSongs() -> [String] {
         
         var circle: [String] = []
@@ -26,7 +23,6 @@ extension CircleSounds {
         
         for sound in sounds {
           circle.append(sound)
-            
         }
         return circle
     }

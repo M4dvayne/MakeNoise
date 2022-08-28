@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AVFoundation
+//import AVFoundation
 
 struct CircleSoundView: View {
     @State var isSelected: Bool = false
@@ -17,6 +17,7 @@ struct CircleSoundView: View {
             LazyVStack{
                 ForEach(0..<soundCircle.count, id: \.self){ index in
                     AnimatedCircleView(num: index)
+                    
                 }
             }
         }
